@@ -1,37 +1,18 @@
-# Frontend Hackathon: The Pokéshop Challenge
+# Svelte Hackathon: The Pokéshop Challenge
 
 ## Intro
 
-Welcome to the Pokéshop Challenge. We will be hacking on some new frontend code to expand our skillsets and come up with creative solutions to tricky problems under time pressure.
-
-You can use any frontend technology you like - but the idea is to use a technology that you're not already familiar with. So that probably means no React, but it's up to you.
+Welcome to the Pokéshop Challenge! We will be hacking on some Svelte to learn more about it's unique approach to building web applications.
 
 A Node API has been provided for your UI to connect to - it's intentionally unstable, so no cheating and editing the source code in `server.js`!
 
-This challenge is intended to be used for a 3-hour timeframe, so don't expect to finsh all, or even most of it.
+This challenge is intended to be used for a 3-hour timeframe, so don't expect to finish all, or even most of it.
 
 You can work alone, in pairs, or in teams - whichever suits your learning style most!
 
 ## Getting started
 
-We sent out a survey on which technologies would be interesting to use. Here are some suggested resources to quickly boostrap some of those technologies and get you coding:
-
-| Technology    | How to bootstrap it                                                         |
-| ------------- | --------------------------------------------------------------------------- |
-| React         | [create-react-app ](https://github.com/facebook/create-react-app)           |
-| Vue           | [Vue CLI](https://cli.vuejs.org/guide/creating-a-project.html)              |
-| Elm           | [create-elm-app ](https://github.com/halfzebra/create-elm-app)              |
-| ClojureScript | Follow the [official docs](https://clojurescript.org/guides/quick-start)    |
-| Reason        | Follow the [official docs](https://reasonml.github.io/docs/en/installation) |
-| Vanilla       | Roll your own :)                                                            |
-
-Other interesting technology approaches that were requested, but might not be as straightforward to set up:
-
-- Svelte
-- Ionic
-- Webcomponents
-
-Choose wisely!
+[Svelte documentation here](https://svelte.dev/)
 
 ## The Challenge
 
@@ -51,13 +32,13 @@ During our inception, we discovered the following requirements for a POC:
 
 1. Show a Browse page which shows each available Pokémon's picture, name, and price. As Pokéshop wants their customers to spend as much money as possible, the articles should be shown in order of price, from most expensive to least expensive. If the prices are equal, sort alphabetically on name.
 
-2. Clicking on a given Pokémon's area (invisble box enclosing image, name, and price) should open a modal displaying details for the selected article. The modal should show a larger version of the image, the name, the price, and the description. The modal should close upon pressing Escape or clicking the "x" button on the top right of the modal.
+2. Clicking on a given Pokémon's area (invisible box enclosing image, name, and price) should open a modal displaying details for the selected article. The modal should show a larger version of the image, the name, the price, and the description. The modal should close upon pressing Escape or clicking the "x" button on the top right of the modal.
 
 3. On the modal, customers should be able to click an "Add to Cart" button, to add the selected article to the cart. Unfortunately, Pokéshop has not yet implemented an API for this, so the cart information will be kept in the browser only. Once an article is added to the cart, the number in the cart bubble on the top right of the page should increase. It is possible to add multiple of the same Pokémon to the cart. Customers will not be able to remove Pokémon from the cart for the time being.
 
 4. We need to provide a free text search to assist customers better find what they're looking for. On the browse page, there should be a text field for customers to specify their search terms. To submit and get the results, there should be a "Go" button. The BFF API provided by Pokéshop supports this use case and will return a filtered list of article, matching if at least of the words in the search appear the the article's description. If no search terms are provided, the full list of Pokémon should be shown.
 
-5. To enhance the seach filtering capabilty, provide a dropdown to allow the customer to specify the Pokémon types they're interested in. The options are Grass, Water, Fire, Normal, Flying, Poison, Bug, and Electric. This search filter can be combined with the free text search, such that if both are used the results are based on applying both filters. The search will again be submitted upon clicking "Go".
+5. To enhance the search filtering capability, provide a dropdown to allow the customer to specify the Pokémon types they're interested in. The options are Grass, Water, Fire, Normal, Flying, Poison, Bug, and Electric. This search filter can be combined with the free text search, such that if both are used the results are based on applying both filters. The search will again be submitted upon clicking "Go".
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Level 1:** Allow the user to select a single Pokémon type at a time, using a traditional dropdown<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Level 2:** Provide a dropdown multiselect that allows a user to select _multiple_ types at a time
@@ -66,14 +47,14 @@ During our inception, we discovered the following requirements for a POC:
 
 ### Bonus
 
-Get the best possible [Lighthouse](https://developers.google.com/web/tools/lighthouse/) score you can. The challenge here is to optimize for Performace, Accessibility, Best Practies, and SEO (you can neglect PWA for the scope of this hackathon). Sum up your score for these four metrics to get your overall score out of 400.
+Get the best possible [Lighthouse](https://developers.google.com/web/tools/lighthouse/) score you can. The challenge here is to optimize for Performance, Accessibility, Best Practices, and SEO (you can neglect PWA for the scope of this hackathon). Sum up your score for these four metrics to get your overall score out of 400.
 
 To run the Lighthouse report, open the Chrome devtools (F12), go to the "Audits" tab, and hit "Run Audits".
 
 ## Mockups
 
 ![Browse articles](mockups/browse.png)
-![Modal open for slected article](mockups/modal_open.png)
+![Modal open for selected article](mockups/modal_open.png)
 
 ## API
 
