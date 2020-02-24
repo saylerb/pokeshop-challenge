@@ -12,7 +12,12 @@ You can work alone, in pairs, or in teams - whichever suits your learning style 
 
 ## Getting started
 
-[Svelte documentation here](https://svelte.dev/)
+Pick a template as a starting point: 
+
+- [svelte official template](https://github.com/sveltejs/template)
+- [template with basic testing tooling](https://github.com/saylerb/svelte-template)
+
+See the [Svelte documentation here](https://svelte.dev/)
 
 ## The Challenge
 
